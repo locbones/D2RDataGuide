@@ -534,6 +534,7 @@
                         <p>This file controls global Act functionalities including item levels, monster behaviors, and waypoints</p>
                         <p>This file uses the wanderingmon.txt file for a modular list of potential wandering units to spawn</p>
                         <p>Any column field name starting with "*" is considered a comment field and is not used by the game</p>
+                        <p><color="red">This file defines where an act begins and ends. It is new to D2R and helps control traveling between acts.</color></p>
 
                     <h3 id="actinfodf"><b>Data Fields</b></h3>
                         <p><b>act -</b> Defines the ID for the Act</p>
@@ -548,7 +549,7 @@
                         <p><b>waypoint1 (to waypoint9) -</b> Uses an area level ("Name field" from levels.txt) as the designated waypoint selection in the Waypoint UI</p>
                         <p><b>wanderingMonsterPopulateChance -</b> The percent chance (from 0 to 100) to spawn a wandering monster (See wanderingmmon.txt for a list of possible monsters to spawn)</p>
                         <p><b>wanderingMonsterRegionTotal -</b> The maximum number of wandering monsters allowed at once</p>
-                        p><b>wanderingPopulateRandomChance -</b> A secondary percent chance (from 0 to #) to determine whether to attempt populating with monsters. Only fails if random chance selects 0.</p>
+                        <p><b>wanderingPopulateRandomChance -</b> A secondary percent chance (from 0 to #) to determine whether to attempt populating with monsters. Only fails if random chance selects 0.</p>
 
 
                     <h2 id="armor">armor.txt</h2>
