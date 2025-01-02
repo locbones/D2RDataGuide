@@ -521,41 +521,34 @@
                 </nav>
 
                 <article class="contents">
+
+                    <style>
+                        p b {
+                            color: orange;
+                        }
+                    </style>
+
                     <h2 id="actinfo">actinfo.txt</h2>
 
                     <h3 id="actinfoov"><b>Overview</b></h3>
-<p>This file controls global Act functionalities including item levels, monster behaviors, and waypoints</p>
-<br>
-<p>This file uses the wanderingmon.txt file for a modular list of potential wandering units to spawn</p>
-<br>
-<p>Any column field name starting with "*" is considered a comment field and is not used by the game</p>
+                        <p>This file controls global Act functionalities including item levels, monster behaviors, and waypoints</p>
+                        <p>This file uses the wanderingmon.txt file for a modular list of potential wandering units to spawn</p>
+                        <p>Any column field name starting with "*" is considered a comment field and is not used by the game</p>
 
-<style>
-    p b {
-        color: orange;
-    }
-</style>
-    
-<h3 id="actinfodf"><b>Data Fields</b></h3>
-<p><b>act -</b> Defines the ID for the Act</p>
-<p><b>town -</b> Uses an area level ("Name field" from levels.txt) to define the Act's town area</p>
-<p><b>start -</b> Uses an area level ("Name field" from levels.txt) to define where the player starts in the Act</p>
-<br>
-<p><b>maxnpcitemlevel -</b> Controls the maximum item level for items sold by the NPC in the Act</p>
-<br>
-<p><b>classlevelrangestart -</b> Uses an area level ("Name field" from levels.txt) with its MonLvl values as a global Act minimum monster level. For example, this is used to determine chest levels in an Act.</p>
-<p><b>classlevelrangeend -</b> Uses an area level ("Name field" from levels.txt) with its MonLvl values as a global Act maximum monster level. For example, this is used to determine chest levels in an Act.</p>
-<br>
-<p><b>wanderingnpcstart -</b> Uses an index to determine which wandering monster class to use when populating areas (See wanderingmmon.txt for a list of possible monsters to spawn)</p>
-<p><b>wanderingnpcrange -</b> This is a modifier that gets added to the "wanderingnpcstart" value to randomly select an index</p>
-<br>
-<p><b>commonactcof -</b> Specifies which ".D2" file to use as for the common Act COF file. This is used to establish the seed when initializing the Act.</p>
-<br>
-<p><b>waypoint1 (to waypoint9) -</b> Uses an area level ("Name field" from levels.txt) as the designated waypoint selection in the Waypoint UI</p>
-<br>
-<p><b>wanderingMonsterPopulateChance -</b> The percent chance (from 0 to 100) to spawn a wandering monster (See wanderingmmon.txt for a list of possible monsters to spawn)</p>
-<p><b>wanderingMonsterRegionTotal -</b> The maximum number of wandering monsters allowed at once</p>
-<p><b>wanderingPopulateRandomChance -</b> A secondary percent chance (from 0 to #) to determine whether to attempt populating with monsters. Only fails if random chance selects 0.</p>
+                    <h3 id="actinfodf"><b>Data Fields</b></h3>
+                        <p><b>act -</b> Defines the ID for the Act</p>
+                        <p><b>town -</b> Uses an area level ("Name field" from levels.txt) to define the Act's town area</p>
+                        <p><b>start -</b> Uses an area level ("Name field" from levels.txt) to define where the player starts in the Act</p>
+                        <p><b>maxnpcitemlevel -</b> Controls the maximum item level for items sold by the NPC in the Act</p>
+                        <p><b>classlevelrangestart -</b> Uses an area level ("Name field" from levels.txt) with its MonLvl values as a global Act minimum monster level. For example, this is used to determine chest levels in an Act.</p>
+                        <p><b>classlevelrangeend -</b> Uses an area level ("Name field" from levels.txt) with its MonLvl values as a global Act maximum monster level. For example, this is used to determine chest levels in an Act.</p>
+                        <p><b>wanderingnpcstart -</b> Uses an index to determine which wandering monster class to use when populating areas (See wanderingmmon.txt for a list of possible monsters to spawn)</p>
+                        <p><b>wanderingnpcrange -</b> This is a modifier that gets added to the "wanderingnpcstart" value to randomly select an index</p>
+                        <p><b>commonactcof -</b> Specifies which ".D2" file to use as for the common Act COF file. This is used to establish the seed when initializing the Act.</p>
+                        <p><b>waypoint1 (to waypoint9) -</b> Uses an area level ("Name field" from levels.txt) as the designated waypoint selection in the Waypoint UI</p>
+                        <p><b>wanderingMonsterPopulateChance -</b> The percent chance (from 0 to 100) to spawn a wandering monster (See wanderingmmon.txt for a list of possible monsters to spawn)</p>
+                        <p><b>wanderingMonsterRegionTotal -</b> The maximum number of wandering monsters allowed at once</p>
+                        p><b>wanderingPopulateRandomChance -</b> A secondary percent chance (from 0 to #) to determine whether to attempt populating with monsters. Only fails if random chance selects 0.</p>
 
 
                     <h2 id="armor">armor.txt</h2>
