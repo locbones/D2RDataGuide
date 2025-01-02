@@ -153,6 +153,10 @@ h3 {
   padding-top: 1em;
 } */
 
+p > b {
+  color: orange;
+}
+
 @media screen and (max-width: 1200px) {
   body {
     font-size: 14px;
