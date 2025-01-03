@@ -5,8 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title id="d2dfg">Diablo II Data File Guide</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./d2fav.png" type="image/x-icon">
+
+    <style>
+        p b {
+            color: orange;
+        }
+
+        * {
+box-sizing: border-box;
+font-family: Arial,sans-serif;
+font-size:1em;
+}
+
+body {
+margin-top: 0;
+margin-right: 0;
+width: 100vw;
+height: 100vh;
+overflow: auto;
+overflow-x: hidden;
+padding: 0 1.59em 2em 17em;
+background-color: black;
+color: #d3d3d3;
+}
+
+.d2dfgtitle {
+margin-bottom: -50px;
+}
+
+.fork {
+position: absolute;
+top: 0px;
+right: 0px;
+z-index: 3;
+}
+
+p {
+margin:0;
+}
+
+table {
+margin: 0.5em 0 1em 0;
+border-collapse: collapse;
+}
+
+td, th {
+border: 1px solid white;
+}
+
+td {
+padding: 0 5.4pt 0 5.4pt;
+}
+
+ol {
+margin-bottom:0;
+}
+
+ul {
+margin-bottom:0;
+}
+
+h1 {
+font-size: 54pt;
+margin-top: 0.25em;
+margin-bottom: 0em;
+}
+
+h2 {
+font-size: 30pt;
+margin-top: 0.75em;
+margin-bottom: 0em;
+color: #A59263;
+}
+
+h3 {
+margin-top: 0.5em;
+margin-bottom: 0.25em;
+font-size: 24pt;
+font-weight: bold;
+color: #4472C4;
+}
+
+.toc {
+position: fixed;
+background: black;
+left: 0em;
+top: 0em;
+padding: 1em;
+width: 14em;
+height: 100vh;
+line-height: 2;
+overflow-y: auto;
+}
+
+.toc ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.toc ul ul {
+padding-left: 2em;
+}
+
+.toc li a {
+display: inline-block;
+color: #d3d3d3;
+text-decoration: none;
+transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.toc li.visible > a {
+color: rgb(96, 96, 96);
+transform: translate(5px);
+}
+
+.toc-marker {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+
+.toc-marker path {
+transition: all 0.3s ease;
+}
+
+.contents {
+padding: 1em;
+/* max-width: 800px; */
+font-size: 1.2em;
+font-family: "Frank Ruhl Libre", sans-serif;
+}
+
+.contents img {
+max-width: 100%;
+}
+
+.contents .code-block {
+white-space: pre;
+overflow: auto;
+max-width: 100%;
+}
+
+.contents .code-block code {
+display: block;
+background-color: #f9f9f9;
+padding: 10px;
+}
+
+.contents .code-inline {
+background-color: #f9f9f9;
+padding: 4px;
+}
+
+/* .contents h2,
+.contents h3 {
+padding-top: 1em;
+} */
+
+p > b {
+color: orange;
+}
+
+@media screen and (max-width: 1200px) {
+body {
+font-size: 14px;
+}
+}
+
+    </style>
+    
 </head>
 
 <body>
@@ -117,11 +289,7 @@
 
                 <article class="contents">
 
-                    <style>
-                        p b {
-                            color: orange;
-                        }
-                    </style>
+                    
 
                     <h2 id="actinfo">actinfo.txt</h2>
                     <h3 id="actinfoov"><b>Overview</b></h3>
